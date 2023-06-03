@@ -5,16 +5,17 @@ import { Link } from "react-router-dom";
 import Overlay from "./Overlay";
 import React from "react";
 import Steps from "./Steps";
-
+import Navbar from "../../layouts/Navbar/Navbar";
 export default function Home() {
   return (
-    <div className='container-fluid bg-white'>
-      <div className='container'>
+    <div className="container-fluid bg-white">
+      <div className="container">
+        <Navbar />
         <Overlay />
         <Steps />
         <JobAdvertsList size={6} pagination={false} />
-        <div className='text-center mb-5'>
-          <Link to='/jobadvert' className='btn btn-primary rounded shadow'>
+        <div className="text-center mb-5">
+          <Link to="/jobadvert" className="btn btn-primary rounded shadow">
             Browse All
           </Link>
         </div>
