@@ -1,6 +1,7 @@
 import "bootstrap";
 import "./App.scss";
 import "react-toastify/dist/ReactToastify.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import CompanyStaffUpdate from "./pages/CompanyStaff/Update/CompanyStaffUpdate";

@@ -1,0 +1,58 @@
+@import 'bootstrap/scss/bootstrap';
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &.list-layout {
+    // Styles for the list layout
+    th,
+    td {
+      vertical-align: middle;
+    }
+
+    th:first-child,
+    td:first-child {
+      width: 80px;
+      text-align: center;
+    }
+  }
+  &.columns-layout {
+    // Styles for the columns layout
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+
+    th,
+    td {
+      padding: 1rem;
+    }
+  }
+  thead {
+    th {
+      background-color: #4b3ff2;
+      border-color: #4b3ff2;
+      font-weight: bold;
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: #4b3ff2;
+      }
+
+      td {
+        vertical-align: middle;
+      }
+
+      .profile-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}
